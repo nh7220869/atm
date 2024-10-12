@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c5c5c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+   
+
+}
+.atm-container {
+    background-color: #867e7e;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    margin-top: 15px;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 12px;
+    width: calc(100% - 16px); /* Adjusted width for padding */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Center text in input fields */
+    transition: border 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+input:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5); /* Glow effect on focus */
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Increased font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #f8923e;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    margin-bottom: 20px;
+    font-size: 18px; /* Increased font size for message */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.balance-message {
+    margin-top: 20px;
+    font-size: 20px; /* Larger font size for balance message */
+    color: #00ff2a;
+    font-weight: bold; /* Bold text for emphasis */
+}

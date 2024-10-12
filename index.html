@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM Machine</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="atm-container">
+    <h1>ATM Machine</h1>
+    <div id="message" class="message">Enter PIN to access your account</div>
+    
+    <!-- Pin Section -->
+    <div id="pinSection">
+      <input type="password" id="pin" placeholder="Enter PIN" />
+      <button id="pinSubmit">Submit PIN</button>
+    </div>
+
+    <!-- Operation Section (Initially Hidden) -->
+    <div id="operationScreen" class="hidden">
+      <button id="checkBalance">Check Balance</button>
+      <button id="withdraw">Withdraw Money</button>
+
+      <div id="withdrawSection" class="hidden">
+        <input type="number" id="withdrawAmount" placeholder="Enter amount" />
+        <button id="withdrawSubmit">Withdraw</button>
+      </div>
+
+      <div id="balanceMessage" class="balance-message" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
